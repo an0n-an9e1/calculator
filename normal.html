@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="./styles.css" rel="stylesheet" type="text/css">
+    <link href="./normal.css" rel="stylesheet" type="text/css">
   </head>
 
   <body>
@@ -15,8 +15,8 @@
       <button id="menu"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F21thirteen.com%2Fwp-content%2Fuploads%2F2016%2F03%2Fhamburger-menu.jpg&f=1&nofb=1" width="44px"></button>
       <section id="dropdown">
         <ul id="list">
-          <a href="."><li>☢ Simplistic</li></a>
-          <a href="./normal.html"><li>☢ Normal</li></a>
+          <a href="./index.html"><li>☢ Simplistic</li></a>
+          <a href="."><li>☢ Normal</li></a>
           <a href=""><li>☢ Scientific</li></a>
           <a href=""><li>☢ Programmer</li></a>
           <a href=""><li>☢ Expressfull</li></a>
@@ -28,11 +28,15 @@
     <main>
       <div id="calculator">
         <section id="result"></section>
+        <button onclick="operator('P')" class="numbers">()</button>
+        <button onclick="operator('B')" class="numbers">🡰</button>
+        <button onclick="operator('C')" class="numbers">C</button>
+        <button onclick="operator('/')" class="operators">÷</button>
 
         <button onclick="number(7)" class="numbers">7</button>
         <button onclick="number(8)" class="numbers">8</button>
         <button onclick="number(9)" class="numbers">9</button>
-        <button onclick="operator('C')" class="operators">C</button>
+        <button onclick="operator('*')" class="operators">×</button>
 
         <button onclick="number(4)" class="numbers">4</button>
         <button onclick="number(5)" class="numbers">5</button>
@@ -45,6 +49,7 @@
         <button onclick="operator('+')" class="operators">+</button>
 
         <button onclick="number(0)" class="numbers" id="zero">0</button>
+        <button onclick="operator('.')" class="operators">.</button>
         <button onclick="operator('=')" class="operators">=</button>
       </div>
     </main>
