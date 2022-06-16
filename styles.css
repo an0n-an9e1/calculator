@@ -11,6 +11,17 @@ html, body {
   font-family: 'Archivo', sans-serif;
 }
 
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: calc(100vh - 70px);
+}
+
+
+/* NAVBAR */
 #navbar {
   display: flex;
   align-items: center;
@@ -23,15 +34,44 @@ html, body {
   background-color: black;
 }
 
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 100%;
-  height: calc(100vh - 70px);
+#menu {
+  border: none;
+  margin-left: auto;
 }
 
+#dropdown {
+  display: none;
+  position: absolute;
+  z-index: 2;
+
+  background-color: black;
+
+  width: 20vw;
+  left: 100%;
+  bottom: 50%;
+  transform: translate(-100%, -50%);
+  padding: 1rem;
+  padding-left: 2rem;
+}
+
+#list {
+  list-style: none;
+}
+
+#list > a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+
+  margin: 1rem;
+}
+
+#navbar:hover #dropdown {
+  display: block;
+}
+
+
+/* CALCULATOR */
 #calculator {
   display: grid;
   grid-template-columns: auto auto auto auto;
